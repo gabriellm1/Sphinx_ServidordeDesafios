@@ -1,0 +1,182 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>softdes module &#8212; Servidor Desafios 2018 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="desafio module" href="desafio.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="desafio.html" title="desafio module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Servidor Desafios 2018 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="g_func.html" accesskey="U">Guia de arquivos e funções</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-softdes">
+<span id="softdes-module"></span><h1>softdes module<a class="headerlink" href="#module-softdes" title="Permalink to this headline">¶</a></h1>
+<p>Created on Wed Jun 28 09:00:39 2017</p>
+<p>&#64;author: rauli</p>
+<dl class="function">
+<dt id="softdes.change">
+<code class="descclassname">softdes.</code><code class="descname">change</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#change"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.change" title="Permalink to this definition">¶</a></dt>
+<dd><p>Função responsável por fazer as requisições de alteração de senha</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.converte_data">
+<code class="descclassname">softdes.</code><code class="descname">converte_data</code><span class="sig-paren">(</span><em>orig</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#converte_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.converte_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Função responsável por formatar string de data-tempo</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.get_info">
+<code class="descclassname">softdes.</code><code class="descname">get_info</code><span class="sig-paren">(</span><em>user</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#get_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.get_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faz o query de informações do usuário pelo username</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.get_password">
+<code class="descclassname">softdes.</code><code class="descname">get_password</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#get_password"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.get_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Função responsável pela rota que consulta senha do usuário</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.get_quiz">
+<code class="descclassname">softdes.</code><code class="descname">get_quiz</code><span class="sig-paren">(</span><em>_id</em>, <em>user</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#get_quiz"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.get_quiz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faz o query de com todas informações de todos os quizzes disponíveis para o usuário</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.get_quizes">
+<code class="descclassname">softdes.</code><code class="descname">get_quizes</code><span class="sig-paren">(</span><em>user</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#get_quizes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.get_quizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faz o query do id e do número dos quizes disponíveis pro usuário</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.get_user_quiz">
+<code class="descclassname">softdes.</code><code class="descname">get_user_quiz</code><span class="sig-paren">(</span><em>userid</em>, <em>quizid</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#get_user_quiz"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.get_user_quiz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Faz o query das respostas e resultados dos quizzes do usuário</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.hash_pw">
+<code class="descclassname">softdes.</code><code class="descname">hash_pw</code><span class="sig-paren">(</span><em>password</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#hash_pw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.hash_pw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Função responsável pela rota que criptografa senha do usuário</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.lambda_handler">
+<code class="descclassname">softdes.</code><code class="descname">lambda_handler</code><span class="sig-paren">(</span><em>event</em>, <em>context</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#lambda_handler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.lambda_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Função responsável por fazer a correção do teste</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.logout">
+<code class="descclassname">softdes.</code><code class="descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#logout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.logout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Função responsável pela rota de logout</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.main">
+<code class="descclassname">softdes.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trata das rotas GET, POST da requisição /</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.set_info">
+<code class="descclassname">softdes.</code><code class="descname">set_info</code><span class="sig-paren">(</span><em>pwd</em>, <em>user</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#set_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.set_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Função responsável por alterar a senha do usuário no banco de dados</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="softdes.set_user_quiz">
+<code class="descclassname">softdes.</code><code class="descname">set_user_quiz</code><span class="sig-paren">(</span><em>userid</em>, <em>quizid</em>, <em>sent</em>, <em>answer</em>, <em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/softdes.html#set_user_quiz"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#softdes.set_user_quiz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insere no bando de dados o quiz feito pelo usuário</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="desafio.html"
+                        title="previous chapter">desafio module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/rst/softdes.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="desafio.html" title="desafio module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Servidor Desafios 2018 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="g_func.html" >Guia de arquivos e funções</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Raul Ikeda.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+  </body>
+</html>
